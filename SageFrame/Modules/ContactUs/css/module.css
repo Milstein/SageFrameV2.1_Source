@@ -1,0 +1,45 @@
+﻿.cssClassContactWrapper { padding-left:30px;}
+
+.feedback-panel .cssClassContactWrapper table th, .feedback-panel .cssClassContactWrapper table td { border:none !important; padding:10px 5px; }
+.feedback-panel .cssClassContactWrapper table tr:hover { background: #f1f1f1;}
+
+.feedback-panel {
+    padding:20px 0;
+    width: 373px;
+    background: #f1f1f1;
+    position:fixed;
+    top:250px;
+    left:-375px;
+    z-index:1000;
+    border: 1px solid #555;
+}
+ 
+.feedback-panel a.feedback-tab {
+    background:transparent url(../images/feeback.png) no-repeat scroll 0 0;
+    border-width: 1px 1px 1px 0;
+    display:block;
+    height:96px;
+    left:41px;
+    bottom:24px;
+    position:relative;
+    float:right;
+    text-indent:-9999px;
+    width:41px;
+    outline:none;
+    top: 0;
+}
+
+.sfAllrequired {
+    color: #BF6B6B !important;
+    display: inline-block;
+    font: bold 11px/18px Arial,Helvetica,sans-serif;
+    margin-top: 5px;
+}
+.feedback-panel .cssClassFormWrapper p label
+{
+}
+.cssClassPopUpBoxInfo label.error { color: red; }
+
+.cssClassButtonWrapper .sfBtn { float: right; margin-left: 10px;}
+
+.feedback-panel .cssClassContactWrapper table { border-width: 0;}

@@ -1,0 +1,240 @@
+.sf-menu, .sf-menu *
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu
+{
+	line-height: 1.0;
+}
+.sf-menu ul
+{
+	position: absolute;
+	left: 0px;
+	width: 15.0em; /* left offset of submenus need to match (see below) */
+	margin: 0;
+	padding:5px;
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 0px 0px 3px 3px;
+        border-radius: 0px 0px 3px 3px;
+        background:#f2f2f2;
+}
+.sf-menu ul li
+{
+	width: 100%;
+	z-index: 777;
+}
+.sf-menu
+{
+	float: left;
+}
+.sf-menu li em
+{
+	font: italic 12px Georgia, "Times New Roman";
+	color: #AFAFAF;
+	white-space: nowrap;
+}
+.sf-menu li span.sfPageicon
+{
+	margin: 0 5px 0 0;
+	float: left;
+}
+.sf-menu li span.sfPageicon img
+{
+	max-height: 20px;
+}
+.sf-menu li li { border-right: none; }
+.sf-menu li span.sfPagename
+{
+	overflow: hidden;
+	float: left;
+}
+.sf-menu li li span
+{
+	float: none;
+}
+.sf-menu li em
+{
+	display: block;
+}
+.sf-menu li.sfLast
+{
+	border-right: none;
+}
+.sf-menu a
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	color: #555;
+	padding: 10px 18px;
+	font:12px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+.sf-menu li { float: left; position: relative;}
+.sf-menu li.sfActive a{ color:#3D6EC8;}
+
+.sf-menu li li a
+{padding: 6px 15px; text-transform: capitalize;
+}
+
+.sf-menu li li a:hover { background:#3D6EC8; color:#fff; -webkit-border-radius: 5px; border-radius: 5px;}
+
+.sf-menu li li a:hover
+{
+	color: #fff;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul
+{
+	z-index: 777;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul
+{
+	left: 15em; /* match ul width */
+	top: 0;
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul
+{
+	top: -999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
+{
+	left: 15em; /* match ul width */
+	top: 0;
+}
+.sf-menu li li, .sf-menu li li li, .sf-menu li li li li, .sf-menu li li li li li
+{
+
+}
+/*** arrows **/
+.sf-menu a.sf-with-ul
+{
+	padding-right: 2.25em;
+	min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator
+{
+	position: absolute;
+	display: block;
+	right:4px;
+	top: 12px; /* IE6 only */
+	width: 10px;
+	height: 10px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url(../images/gray-arrow.png) no-repeat -10px -100px;
+}
+.sfSidemenu li ul
+{
+	display: none;
+}
+
+
+/*----------------------------------------- CSS Menu ----------------------------------------- */
+ul.sfCssmenu li
+{
+	position: relative;
+}
+ul.sfCssmenu li ul
+{
+	display: none;
+	width: 150px;
+	position: absolute;
+	left: 0;
+	z-index: 777;
+}
+ul.sfCssmenu li:hover ul
+{
+	display: block;
+}
+ul.sfCssmenu li:hover ul li ul
+{
+	display: none;
+	top: 0;
+	left: 150px;
+}
+ul.sfCssmenu li:hover ul li:hover > ul
+{
+	display: block;
+	top: 0;
+	left: 150px;
+}
+/* Side Menu  */
+ul.sfSidemenu
+{
+	margin: 0;
+	padding: 0;
+}
+ul.sfSidemenu li
+{
+	border-bottom: 1px dotted #CCC;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 150px;
+	z-index: 777;
+	background: #fff;
+}
+ul.sfSidemenu li a
+{
+	font: normal 13px Arial, Helvetica, sans-serif;
+	display: block;
+	overflow: hidden;
+	padding: 10px 0;
+}
+ul.sfSidemenu li a em
+{
+	display: block;
+	font: italic 12px Georgia, "Times New Roman";
+	color: #AFAFAF;
+}
+ul.sfSidemenu li ul li
+{
+	border-bottom: none;
+}
+ul.sfSidemenu li a span.sfPageicon
+{
+	float: left;
+	margin: 0 5px 0 0;
+}
+ul.sfSidemenu li a span.sfPagename
+{
+	float: left;
+}
+/* Footer Menu */
+ul.sfFootermenu, ul.sfFootermenu li ul
+{
+	margin: 0;
+	padding: 0;
+}
+ul.sfFootermenu li
+{
+	padding: 3px 0;
+	display: block;
+}
+ul.sfFootermenu li a em
+{
+	display: block;
+	font: italic 12px Georgia, "Times New Roman";
+	color: #AFAFAF;
+}
+ul.sfFootermenu li a
+{
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #5E5E5E;
+	padding: 3px 0;
+}
+ul.sfFootermenu li a:hover
+{
+	color: #000;
+}
+ul.sfFootermenu li li
+{
+	padding: 0 0 0 10px;
+}
+ul.sfFootermenu li span.sfPageicon
+{
+	margin: 0 5px 0 0;
+}
